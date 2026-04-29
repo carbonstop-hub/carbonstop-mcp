@@ -1,0 +1,46 @@
+{
+  "name": "@carbonstopper/mcp",
+  "version": "2.1.0",
+  "description": "MCP server for Carbonstop — carbon footprint modeling via Carbonstop Gateway API",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "carbonstop-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "AGENTS.md"
+  ],
+  "scripts": {
+    "prebuild": "node scripts/build.cjs",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carbonstop-hub/carbonstop-mcp.git"
+  },
+  "keywords": [
+    "mcp",
+    "carbon-footprint",
+    "carbonstop",
+    "emission-factor",
+    "model-context-protocol"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
