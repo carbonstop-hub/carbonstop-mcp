@@ -18,7 +18,7 @@ npx @carbonstopper/mcp
 
 ## Quick Start
 
-1. 前往 [碳云平台](https://ccloud-d-test.carbonstop.com/) 注册登录，创建 API Key（PAT）
+1. 前往 [碳云平台](https://ccloud.carbonstop.com/) 注册登录，创建 API Key（PAT）
 2. 设置环境变量：
 
 ```bash
